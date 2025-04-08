@@ -1,4 +1,5 @@
 import requests
+import os
 
 """"
 #tt video downloader not finished yet so here
@@ -7,7 +8,9 @@ you can get random image of cute cats
 nfactorial please notice me!
 """
 
-BOT_TOKEN = "7657358154:AAFYelAaznnps6Sb8LsPDObI-ECj9JbaXm8"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+
+print(BOT_TOKEN)
 
 API_URL = 'https://api.telegram.org/bot'
 
